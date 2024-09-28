@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ml-ops-demo"
+version = "0.1.0"
+description = ""
+authors = ["kce3kor <kamal.shrestha@in.bosch.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+torch = "^2.4.1"
+datasets = "^3.0.0"
+transformers = "^4.44.2"
+pytorch-lightning = "^2.4.0"
+scikit-learn = "^1.5.2"
+tensorboard = "^2.17.1"
+wandb = "^0.18.1"
+matplotlib = "^3.9.2"
+seaborn = "^0.13.2"
+torchmetrics = "^1.4.2"
+hydra-core = "^1.3.2"
+hydra-colorlog = "^1.2.0"
+omegaconf = "^2.3.0"
+dvc = {extras = ["s3"], version = "^3.55.2"}
+dvc-gdrive = "^3.0.1"
+onnx = "^1.16.2"
+onnxruntime = "^1.19.2"
+fastapi = "^0.115.0"
+uvicorn = "^0.30.6"
+
+
+[tool.poetry.group.dev.dependencies]
+pyclean = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
